@@ -1,5 +1,6 @@
 body {
     background-color: white;
+    margin:16px 8px 16px 8px;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -10,6 +11,7 @@ body {
 }
 
 .navigation li {
+    padding: 10px;
     font-weight: 100;
     letter-spacing: 2px;
 }
@@ -26,6 +28,7 @@ body {
     background-size: cover;
     background-position: bottom center;
     width: 100%;
+    height: 350px;
 }
 
 h1 {
@@ -37,25 +40,41 @@ h1 {
     font-size: 42px;
     font-weight: 600;
     text-align: center;
+    border-color: white;
+    border-style: solid;
 }
 
 #main {
+    margin: 0 auto;
+    width: 500px;
+    height: 800px;
+    overflow: auto;
     padding: 40px;
     text-align: center;
 }
+#main::-webkit-scrollbar {
+  display: none; /* Chrome Safari */
+}
 
 h2 {
+    margin: 0 auto;
     padding: 20px 10px;
     color: red;
     font-size: 26px;
     font-weight: 700;
+    width: 490px;
+    text-align: center;
 }
 
 h3 {
+    margin:30px 20px 30px 20px;
+    padding:20px 30px 20px 30px;
     color: red;
     font-size: 14px;
     line-height: 48px;
     text-align: center;
+    border-color: red;
+    border-style: dashed;
 }
 
 p {
@@ -63,10 +82,12 @@ p {
     color: grey;
     font-size: 16px;
     line-height: 1.5em;
+    margin-top: 40px;
 }
 
 .pull-quote {
-
+    width: 400px;
+    margin: 0 auto;
 }
 
 .byline {
@@ -86,6 +107,8 @@ p {
 }
 
 .share a {
+    margin: 10px;
+    padding: 10px;
     background: red;
     border: 1px solid red;
     border-radius: 3px;
@@ -98,4 +121,8 @@ p {
     background: white;
     border: 1px solid red;
     color: red;
+}
+
+.global{
+    visibility: hidden;
 }
